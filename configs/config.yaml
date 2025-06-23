@@ -1,0 +1,17 @@
+project:
+  name: cropdetection
+  task: image_classification
+
+training:
+  batch_size: 16
+  epochs: 15
+  learning_rate: 0.0005
+  num_workers: 2
+
+model:
+  input_channels: 3
+  num_classes: 4
+
+data:
+  image_size: 224
+  train_split: 0.8
